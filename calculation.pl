@@ -39,3 +39,15 @@ print '0 && 0 : ' . (0 && 0) . "\n";
 print '0 && 1 : ' . (0 && 1) . "\n";
 print '1 && 0 : ' . (1 && 0) . "\n";
 print '1 && 1 : ' . (1 && 1) . "\n";
+print "\n";
+
+my $error = "\$var n'est pas définie.\n";
+
+my $var;    # $var est déclarée, mais elle n'est pas définie
+defined $var && print "\$var = $var\n" or print $error;
+
+$var = 42;  # $var est maintenant définie
+defined $var && print "\$var = $var\n" or print $error;
+
+$var = undef; # $var n'est maintenant plus définie
+defined $var && print "\$var = $var\n" or print $error;

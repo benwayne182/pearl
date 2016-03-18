@@ -6,3 +6,4 @@ while (<>)
 {
     print;
 }
+#print while (<>);

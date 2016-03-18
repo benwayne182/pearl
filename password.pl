@@ -14,3 +14,5 @@ if (my $access = $pass eq "please") {
     print '$access : ' . int($access) . "\n";
     print 'Wrong password'. "\n";
 }
+
+die 'Try again' unless $pass eq "please";

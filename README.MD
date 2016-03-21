@@ -1,4 +1,4 @@
-# pearl
+# perl
 
 #### Add execute permission to a script
 ```bash
